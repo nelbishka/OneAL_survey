@@ -1,0 +1,791 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <title>One</title>
+    </head>
+
+    <body>
+        <img src="Vector-1.png" class="background-image1">
+        <img src="Vector.png" class="background-image2">
+
+        <section>
+
+            <form id="msform" method="POST">
+
+                <ul id="progressbar">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+                <fieldset>
+                    <div style="margin-top:200px; width: 700px;" class="intro-container">
+                        <p class="headertext">Faleminderit qe jeni One!</p>
+                        <p class="bodytext">Për të përmirësuar shërbimet tona, ju lutemi, gjeni pak kohë për të
+                            vlerësuar skuadrat tona teknike të shërbimeve fikse në shtëpinë tuaj!</p>
+                        <input type="button" name="next" class="next action-button btn" value="Jam gati"
+                            style="margin-left: auto; margin-right:auto" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">1→ A e konsideroni të zgjidhur ankesën apo kërkesën tuaj teknike?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q1" type="radio">
+                                    <span>Po</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q1" type="radio">
+                                    <span>Jo</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q1" type="radio">
+                                    <span>U zgjidh përkohësisht / u ripërsërit problemi</span>
+                                </label>
+                            </div>
+                            <div class="error-message">Ju lutemi zgjidhni njërin nga opsionet</div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">2→ A ju vizituan në ambjent skuadrat tona teknike pas raportimit të ankesës
+                            suaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q2" type="radio">
+                                    <span>Po</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q2" type="radio">
+                                    <span>Jo</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q2" type="radio">
+                                    <span>Tjeter <input type="text" name="other"
+                                            style="width: 80%; padding:10px; border:none"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+                        <p class="questiontext">3→ A ishte ky shërbim për ju personalisht apo për familjarë të tjerë tuajt?
+                        </p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q3" type="radio">
+                                    <span>Po, për mua personalisht</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q3" type="radio">
+                                    <span>Për familjaret e mi (prindërit etj)</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q3" type="radio">
+                                    <span>Për vete dhe familjarë (prindër etj)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">4→ Cila ishte arsyeja kryesore për nevojën apo kërkesën e shërbimit të
+                            skuadrës teknike në shtëpinë tuaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="01"><label for="01">Instalim / zëvendësim pajisjeje
+                                    (modem/dekoder)</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="02"><label for="02">Mirëmbajtje e rrjetit / lidhje e
+                                    shkëputur</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="03"><label for="03">Probleme teknike me platformën e
+                                    TV</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="04"><label for="04">Kalim në rrjetin Fibër</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="05"><label for="05">Ndryshim i shpejtësisë së lidhjes
+                                    së internetit</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="06"><label for="06">Përforcim sinjali / rregullim i
+                                    sinjalit të internetit</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q4" id="07"><label for="07">Tjetër <input type="text"
+                                        name="other" style="width: 80%; padding:10px; border:none"></label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo"/>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">5→ Në përgjithësi, sa të kënaqur do të thoshit se jeni me vizitën dhe
+                            shërbimin e ofruar nga skuadra teknike?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q5" type="radio">
+                                    <span>Shumë i/e kenaqur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q5" type="radio">
+                                    <span>I/e kënaqur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q5" type="radio">
+                                    <span>Neutral</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q5" type="radio">
+                                    <span>I/e pakënaqur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q5" type="radio">
+                                    <span>Shumë i/e pakënaqur</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">6→ Si do ta vlerësonit kohën e marrjes së shërbimit dhe paraqitjen e
+                            skuadrës teknike nga momenti i kërkesës suaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q6" type="radio">
+                                    <span>E shpejtë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q6" type="radio">
+                                    <span>Në kohën e duhur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q6" type="radio">
+                                    <span>E vonuar</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">7→ Pas sa kohësh e morët shërbimin e skuadrës teknike (brenda ç'intervali
+                            kohe) në shtëpinë tuaj pas kontaktit/kërkesës suaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q7" type="radio">
+                                    <span>Më pak se 24 orë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q7" type="radio">
+                                    <span>Brenda 24 orë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q7" type="radio">
+                                    <span>48 - 72 orë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q7" type="radio">
+                                    <span>Brenda një jave</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q7" type="radio">
+                                    <span>Tjetër <input type="text" name="other"
+                                            style="width: 80%; padding:10px; border:none"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">8→ Cila nga karakteristikat e përshkruan më mirë skuadrën teknike sipas
+                            përvojës suaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="1"><label for="1">Shërbim në kohë</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="2"><label for="2">Sjellje profesionale</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="3"><label for="3">Njohuri teknike</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="4"><label for="4">Zgjidhje efikase / praktike</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="5"><label for="5">Miqësore në komunikim</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="6"><label for="6">Qartësia dhe dobishmëria e
+                                    ndërhyrjes</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="7"><label for="7">Asgjë më sipër</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q8" id="8"><label for="8">Tjetër <input type="text"
+                                        name="other" style="width: 80%; padding:10px; border:none"></label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">9→ Sipas përvojës suaj, si e vlerësoni gatishmërinë e skuadrës teknike për
+                            t'i dhënë zgjidhje problemit apo shërbimit në shtëpine tuaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q9" type="radio">
+                                    <span>Shumë të përgatitur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q9" type="radio">
+                                    <span>Deri diku të përgatitur</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q9" type="radio">
+                                    <span>Të papërgatitur fare</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">10→ A jeni dakord se skuadra teknike bëri maksimumin e përpjekjeve
+                            pavarësisht natyrës së problemit tuaj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q10" type="radio">
+                                    <span>Shumë dakord</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q10" type="radio">
+                                    <span>Deri diku dakord</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q10" type="radio">
+                                    <span>Aspak dakord</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">11→ A e konsideroni të zgjidhur çështjen, ankesën apo kërkesen tuaj teknike
+                            nga skuadra pas paraqitjes/ndërhyrjes së saj?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q11" type="radio">
+                                    <span>Po</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q11" type="radio">
+                                    <span>Jo</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">12→ A ju desh juve të kontaktoni më shumë se një herë për të marrë
+                            zgjidhjen/ shërbimin e plotë nga skuadra teknike?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q12" type="radio">
+                                    <span>Po</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q12" type="radio">
+                                    <span>Jo</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">12.1→ Sa herë ju desh të rikontaktoni për marrjen e shërbimit nga skuadra
+                            teknike në shtëpi?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q12.1" type="radio">
+                                    <span>2 herë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q12.1" type="radio">
+                                    <span>3 - 4 herë</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q12.1" type="radio">
+                                    <span>Më shumë se 5 herë</span>
+                                </label>
+                            </div>
+                            <div class="error-message">Ju lutemi zgjidhni njërin nga opsionet</div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">13→ Nisur nga përvoja juaj, si do ta vlerësonit paraqitjen dhe kapacitetet e
+                            skuadrës teknike?</p>
+
+                        <p class="sub-text">Paraqitje profesionale (uniforme, etj)</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13" type="radio">
+                                    <span>E shkëlqyer</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13" type="radio">
+                                    <span>E pranueshme</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13" type="radio">
+                                    <span>E dobët</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">13.1→ Nisur nga përvoja juaj, si do ta vlerësonit paraqitjen dhe kapacitetet
+                            e skuadrës teknike?</p>
+
+                        <p class="sub-text">Mjete teknike ne dispozicon</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.1" type="radio">
+                                    <span>E shkëlqyer</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.1" type="radio">
+                                    <span>E pranueshme</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.1" type="radio">
+                                    <span>E dobët</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container">
+
+                        <p class="questiontext">13.2→ Nisur nga përvoja juaj, si do ta vlerësonit paraqitjen dhe kapacitetet
+                            e skuadrës teknike?</p>
+
+                        <p class="sub-text">Korrektesën në sjellje / komunikim</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.2" type="radio">
+                                    <span>E shkëlqyer</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.2" type="radio">
+                                    <span>E pranueshme</span>
+                                </label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <label>
+                                    <input name="q13.2" type="radio">
+                                    <span>E dobët</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Vazhdo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="container" style="width:1100px;">
+
+                        <p class="questiontext">14→ Çfarë do të donit të ndryshonit apo përmirësonit në shërbimin e skuadrës
+                            teknike?</p>
+
+                        <div class="options">
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="001"><label for="001">Shpejtësinë e marrjes së
+                                    shërbimit
+                                    nga momenti i kërkesës</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="002"><label for="002">Koha e zgjatjes së zgjidhjes së
+                                    shërbimit pas paraqitjes në banesë</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="003"><label for="003">Zgjidhje / mbështetje që me
+                                    herën e
+                                    parë për kërkesën</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="004"><label for="004">Korrektesën dhe gatishmërinë në
+                                    përputhje me kontratën për paraqitjen / zgjidhjen</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="005"><label for="005">Mbështetjen nga zyra qëndrore
+                                    për
+                                    problemet me sistemin / mbulimin e rrjetit</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="006"><label for="006">Thjeshtësimin dhe lehtësimin e
+                                    procedurës së kontaktit apo paraqitjes</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="007"><label for="007">Qartësinë dhe dobishmërinë e
+                                    këshillës apo ndërhyrjes / asistence teknike per zgjidhje</label>
+                            </div>
+
+                            <div style="padding: 10px; border-bottom:1px solid #A6A6A6">
+                                <input type="checkbox" name="q14" id="008"><label for="008">Tjetër <input type="text"
+                                        name="other" style="width: 80%; padding:10px; border:none"></label>
+                            </div>
+                        </div>
+                        <input type="button" name="next" class="next action-button btn" value="Dërgo" />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div style='margin-top: 300px;' class="outro-container">
+                        <p class="headertext">Faleminderit për përgjigjet tuaja!</p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <progress id="file" max="100" value="0" class="progress-bar"></progress>
+        <img src="Group.png" class="downright">
+
+        <script>
+            $(document).ready(function () {
+                var current_index = 0;
+                $(".next").click(function (event) {
+                    if (current_index === 2) {
+                        if ($('input[name="q2"]:not(:first):checked').length > 0) {
+                            markAllFieldsetsCompleted();
+                            makeStepActive(18);
+                            current_index = 18;
+                        }
+                        else if ($('input[name="q2"]:checked').length > 0) {
+                            markCurrentFieldsetAsCompleted();
+                            makeStepActive(current_index + 1);
+                            current_index++;
+                        }
+                        else {
+                            markCurrentFieldsetAsCompleted();
+                            makeStepActive(current_index+1)
+                            current_index++;
+                            event.preventDefault();
+                        }
+                    }
+                    else if (current_index === 12) {
+                        if ($('input[name="q12"]:not(:first):checked').length > 0) {
+                            markCurrentFieldsetAsCompleted();
+                            $('fieldset').eq(current_index + 1).addClass('completed');
+                            makeStepActive(14);
+                            current_index = 14;
+                        }
+                        else if ($('input[name="q12"]:checked').length > 0) {
+                            markCurrentFieldsetAsCompleted();
+                            makeStepActive(current_index + 1);
+                            current_index++;
+                        }
+                        else {
+                            markCurrentFieldsetAsCompleted();
+                            makeStepActive(current_index+1)
+                            current_index++;
+                            event.preventDefault();
+                        }
+                    }
+                    else if (validateStep(current_index)) {
+                        markCurrentFieldsetAsCompleted();
+                        makeStepActive(current_index + 1);
+                        current_index++;
+                    } else {
+                        event.preventDefault();
+                    }
+                });
+
+                function markCurrentFieldsetAsCompleted() {
+                    const currentFieldset = $('fieldset').eq(current_index);
+                    currentFieldset.addClass('completed');
+
+                    const completedFieldsets = $('fieldset.completed').length;
+                    const totalFieldsets = 18;
+                    currentProgress = (completedFieldsets / totalFieldsets) * 100;
+
+                    $("#file").attr("value", currentProgress);
+                }
+                makeStepActive(current_index);
+            });
+
+            function makeStepActive(index) {
+                var step = $("#progressbar li:eq(" + index + ")");
+                var fieldset = $("fieldset:eq(" + index + ")");
+                if (step.length) {
+                    $("#progressbar li").hide();
+                    $("fieldset").hide();
+                    step.show();
+                    fieldset.slideDown(0);
+                }
+            }
+
+            function validateStep(step) {
+                var fieldset = $("fieldset:eq(" + step + ")");
+                if (step === 0 || fieldset.find("input[name='q1']:checked").length > 0) {
+                    $('input').closest('.options').find('.error-message').hide();
+                    return true;
+                }
+                else if(step != 0 && step !=1){
+                    return true;
+                }
+                else {
+                    $('input').closest('.options').find('.error-message').show();
+                    event.preventDefault();
+                }
+            }
+
+            function markAllFieldsetsCompleted() {
+                $('fieldset').addClass('completed');
+                currentProgress = 100;
+                $("#file").attr("value", currentProgress);
+            }
+
+        </script>
+    </body>
+    </html>
